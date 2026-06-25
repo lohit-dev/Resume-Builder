@@ -1,0 +1,116 @@
+output: frontend_resume.pdf
+
+summary: >-
+  Frontend Developer with 1.5+ years of experience building modern, responsive, 
+  and highly interactive user interfaces. Specializes in React 19, React Native, TypeScript, 
+  Next.js, and Tailwind CSS v4. Passionate about web performance, SSR, 
+  and delivering pixel-perfect designs utilizing bleeding-edge web stacks like TanStack Start and Vite.
+
+skills:
+  - label: "Frontend / Mobile"
+    value: "React.js, React Native, Next.js, TanStack Start, HTML, CSS"
+  - label: "Styling & UI"
+    value: "Tailwind CSS v4, BEM Methodology, Framer Motion, AOS, Figma"
+  - label: "Languages"
+    value: "TypeScript, JavaScript, Kotlin / Java (Android)"
+  - label: "Build & Tooling"
+    value: "Vite, Bun, Biome, Expo, Vercel Build Output API"
+  - label: "Backend (Familiarity)"
+    value: "Node.js, PostgreSQL, WebSockets"
+  - label: "Tools"
+    value: "Neovim, macOS / Linux (Arch), Postman"
+
+experience:
+  - title: "Software Associate — Frontend & Full-Stack"
+    company: "Hashira Works"
+    company_url: "https://hashira.io"
+    company_url_label: "hashira.io"
+    dates: "Dec 2024 – Apr 2026"
+    bullets:
+      - "Built the <b>Garden Analyzer</b> UI, a full-stack MCP analytics application over Garden.Finance multi-chain data, focusing on clear data visualization."
+      - "Developed interactive data dashboards and monitoring panels for internal infrastructure and real-time cross-chain transaction flows."
+      - "Collaborated closely with backend engineers to integrate complex transaction execution pipelines into intuitive user-facing interfaces."
+
+  - title: "Web Developer Intern"
+    company: "InternIQ"
+    dates: "Mar 2024 – Apr 2024"
+    bullets:
+      - "Built and optimized web application UI components during a 1-month internship; received a Letter of Recommendation for performance and design implementation."
+      - "Improved responsive layouts and mobile view experiences across the application."
+
+  - title: "Backend Developer Intern"
+    company: "Navodita Infotech"
+    dates: "Feb 2024 – Mar 2024"
+    bullets:
+      - "Built a multi-room real-time chat app with Node.js, Express, and Socket.io; frontend included live message UI and real-time updates."
+      - "Received a Letter of Recommendation for delivery and feature implementation."
+
+  - title: "Python Instructor (Part-time)"
+    company: "NRI Institute of Technology"
+    dates: "May 2022 – Aug 2022"
+    bullets:
+      - "Taught Python fundamentals to first-year students such as file I/O, text analysis, and logic-building exercises."
+      - "Designed and delivered beginner-friendly coding sessions including text analyzer, Rock-Paper-Scissors, and file handling projects."
+
+projects:
+  - title: "TravelID 2.0 Wallet UI"
+    badge: "3rd Prize · $1,000 · Polkadot Cloud Hackathon"
+    stack: "React, TypeScript, Polkadot.js"
+    bullets:
+      - "Co-built the frontend wallet and QR verification flow for a decentralized travel document platform."
+
+  - title: "TraceLabs — Data Flow Simulation UI"
+    stack: "Next.js, TypeScript, Tailwind CSS, Bun"
+    bullets:
+      - "Built a deterministic visualization dashboard to monitor complex, 4-phase data flow simulations."
+      - "Designed custom component flows (StepCard, StepInspector, Sidebar) for navigating LLM-generated code paths."
+
+  - title: "lohit.xyz — Single-Page Developer Portfolio"
+    stack: "TanStack Start, React 19, Vite, Tailwind CSS v4, Bun"
+    bullets:
+      - "Architected a modern portfolio using a bleeding-edge web stack with file-based routing and Vercel's Build Output API (nitro)."
+
+  - title: "Sushiman Landing Page"
+    stack: "Raw HTML5, CSS3, JavaScript, BEM Methodology, AOS"
+    bullets:
+      - "Engineered a lightning-fast, zero-framework restaurant landing page strictly utilizing raw HTML, CSS, and vanilla JS."
+      - "Applied BEM (Block Element Modifier) methodology for highly maintainable CSS architecture and integrated AOS for scroll micro-animations."
+
+  - title: "DawgCoin Web3 Decentralized App"
+    stack: "Next.js, TypeScript, Wagmi, Tailwind CSS, Vercel"
+    bullets:
+      - "Built the frontend application for an ERC20 token, allowing users to connect their wallets directly via Wagmi."
+      - "Implemented responsive, modern UI patterns for displaying wallet balances and executing token transfers."
+
+  - title: "Real-Time Node.js Chat UI"
+    stack: "HTML, CSS, Vanilla JS, Socket.io Client"
+    bullets:
+      - "Built the frontend interface for a multi-room real-time chat application featuring live message broadcasting."
+      - "Integrated location-sharing functionality through the browser Geolocation API and mapped it to the WebSocket connection."
+
+education:
+  - degree: "B.Tech in Computer Science & Data Science"
+    institution: "NRI Institute of Technology, Agiripalli"
+    dates: "2022 – 2026 (Final Semester)"
+    bullets:
+      - "Member of Google Developers Club; attended hackathons and workshops."
+      - "1st place in college-wide SQL mobile app competition."
+      - "Published two Android apps on the Play Store independently, handling end-to-end UI design and development."
+
+  - degree: "Intermediate — MPC (Maths, Physics, Chemistry)"
+    institution: "Sri Chaitanya Junior College"
+    dates: "2020 – 2022"
+
+  - degree: "SSC"
+    institution: "Ravindra Bharathi Public School"
+    dates: "2019 – 2020"
+
+languages:
+  - name: "English"
+    level: "Proficient"
+  - name: "Telugu"
+    level: "Native"
+  - name: "Hindi"
+    level: "Conversational"
+  - name: "Japanese"
+    level: "Still Learning"

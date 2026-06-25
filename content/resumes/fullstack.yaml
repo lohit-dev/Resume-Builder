@@ -2,24 +2,24 @@ output: fullstack_resume.pdf
 
 summary: >-
   Full-stack developer with 1.5+ years of production experience across backend
-  systems, mobile, and web. Built real-time backend services in Go and Rust at
-  Garden Finance, shipped a complete React Native streaming app, and delivered
-  multi-room WebSocket chat infrastructure. Comfortable owning a feature end-to-end
-  from database schema to UI, and working across TypeScript, Go, Rust, and Python.
+  systems, mobile, and modern web frameworks. Built real-time backend services in Go and Rust at
+  Garden Finance, shipped complete React Native apps (AniTaku), and engineered bleeding-edge web applications
+  using TanStack Start, React 19, and Vite. Comfortable owning a feature end-to-end
+  from database schema/Web3 infrastructure to pixel-perfect UI.
 
 skills:
+  - label: "Frontend / Mobile"
+    value: "React.js, React Native, Next.js, TanStack Start, Tailwind CSS v4, Bun, Vite"
+  - label: "Backend"
+    value: "Node.js, Express.js, Axum, Socket.io, RESTful APIs, WebSockets"
   - label: "Languages"
     value: "TypeScript, JavaScript, Go, Rust, Python"
-  - label: "Frontend / Mobile"
-    value: "React.js, React Native, Tailwind CSS, Figma"
-  - label: "Backend"
-    value: "Node.js, Express.js, Axum, RESTful APIs, WebSockets, Socket.io"
-  - label: "Databases"
-    value: "PostgreSQL, MongoDB, MySQL"
+  - label: "Databases & Web3"
+    value: "PostgreSQL, MongoDB, CSV Stores, Subxt, Foundry, HTLCs"
   - label: "Infrastructure"
-    value: "Docker, Docker Compose, AWS, Git, Gitea, CI/CD"
+    value: "Docker, Vercel Build Output API, AWS, Git, CI/CD"
   - label: "Tools"
-    value: "Neovim, Android Studio, macOS / Linux (Arch)"
+    value: "Neovim, Biome, macOS / Linux (Arch)"
 
 experience:
   - title: "Software Associate — Full-Stack (Go, Rust, TypeScript)"
@@ -28,58 +28,66 @@ experience:
     company_url_label: "hashira.io"
     dates: "Dec 2024 – Apr 2026"
     bullets:
-      - "Built and maintained backend services for <b><link href='https://garden.finance'>Garden Finance</link></b> in Go and Rust: watcher services, extraction pipelines, and cross-chain order execution."
+      - "Built and maintained backend services for <b><link href='https://garden.finance'>Garden Finance</link></b> in Go and Rust: watcher services, extraction pipelines, and cross-chain execution."
       - "Built <b>Garden Analyzer</b>, a full-stack MCP analytics app in Go and TypeScript over Garden.Finance multi-chain data."
-      - "Shipped a TypeScript arbitrage bot and a Twitter image-generator bot for high-value trade alerts ($10K+); still running in production after 3 iterations."
-      - "Built a Strava-to-Discord integration bot and owned internal deployment tooling on self-hosted Gitea."
+      - "Shipped a TypeScript arbitrage bot and a Twitter image-generator bot for high-value trade alerts ($10K+); still running in production."
+      - "Built and maintained monitoring automation: Strava-to-Discord bot and GitHub release delivery bots across multiple platforms."
+      - "Owned internal deployment tooling on self-hosted Gitea."
 
   - title: "Backend Developer Intern"
     company: "Navodita Infotech"
     dates: "Feb 2024 – Mar 2024"
     bullets:
-      - "Built a multi-room real-time chat app with Node.js, Express, and Socket.io. Received a Letter of Recommendation."
+      - "Architected a multi-room real-time chat app with Node.js, Express, and Socket.io, supporting live message broadcasting and location sharing."
+      - "Received a Letter of Recommendation for backend architecture and delivery."
 
   - title: "Web Developer Intern"
     company: "InternIQ"
     dates: "Mar 2024 – Apr 2024"
     bullets:
-      - "Built and optimized web application features during a 1-month internship; received a Letter of Recommendation for performance."
+      - "Built and optimized web application UI features during a 1-month internship; received a Letter of Recommendation for performance."
 
   - title: "Python Instructor (Part-time)"
     company: "NRI Institute of Technology"
     dates: "May 2022 – Aug 2022"
     bullets:
-      - "Taught Python fundamentals to first-year students and designed beginner coding projects."
+      - "Taught Python fundamentals to first-year students such as file I/O, text analysis, and logic-building exercises."
+      - "Designed and delivered beginner-friendly coding sessions including text analyzer, Rock-Paper-Scissors, and file handling projects."
 
 projects:
-  - title: "Animax — Anime Streaming App"
-    stack: "React Native, TypeScript, Tailwind CSS, AniWatch API"
-    bullets:
-      - "Built a complete React Native streaming app with browse, search, and episode playback from scratch."
-      - "Optimized API fetch and screen transitions for faster performance on lower-bandwidth mobile networks."
-
-  - title: "Real-Time Chat App"
-    stack: "Node.js, Express, Socket.io, JavaScript"
-    bullets:
-      - "Built a multi-room chat app with live message broadcasting and room management."
-      - "Became the foundation for Socket.io patterns later used in production at Hashira."
-
   - title: "TravelID 2.0"
     badge: "3rd Prize · $1,000 · Polkadot Cloud Hackathon"
-    stack: "Rust, Axum, Subxt, React, TypeScript, PostgreSQL, Polkadot"
+    stack: "Rust, Axum, Subxt, React, TypeScript, Polkadot"
     bullets:
-      - "Led backend and co-built the React frontend: wallet integration and QR-based verification flow."
-      - "Decentralized document verification using SHA-256 hashes and on-chain Subxt remarks."
+      - "Led backend and co-built the React frontend: wallet integration and QR-based verification flow utilizing SHA-256 and on-chain remarks."
 
-  - title: "Crypto Analyzer"
-    stack: "Go, TypeScript, Claude MCP, Garden.Finance API, multi-chain data"
+  - title: "TraceLabs — Full-Stack AI Simulation"
+    stack: "Bun, Next.js, TypeScript, Rust, OpenAI API"
     bullets:
-      - "Built a full-stack MCP analytics app in Go and TypeScript for Garden.Finance protocol metrics."
+      - "Architected a full-stack platform for deterministic simulation of codebase data flows using a custom Rust AST extractor."
+      - "Built a complex interactive visualization dashboard in Next.js to monitor AI-driven pipeline execution across 4 distinct phases."
 
-  - title: "Automation Tools/Bots (Discord, Telegram, Twitter)"
-    stack: "Python, TypeScript, discord.py, python-telegram-bot, GitHub API"
+  - title: "lohit.xyz — Single-Page Developer Portfolio"
+    stack: "TanStack Start, React 19, Vite, Tailwind v4, Bun, Vercel API"
     bullets:
-      - "Built a Discord music bot with queue and playback, and Telegram/Twitter automation for trade monitoring and release delivery."
+      - "Engineered a highly optimized developer portfolio utilizing SSR, file-based routing, and the Vercel Build Output API for exceptional performance."
+
+  - title: "Passkey Authentication Server"
+    stack: "Rust, WebAuthn, sqlx, HTML/Templates"
+    bullets:
+      - "Built a highly secure authentication backend integrating WebAuthn for passwordless passkey authentication."
+      - "Managed state and database migrations cleanly using sqlx."
+
+  - title: "Real-Time Node.js Chat Server"
+    stack: "Node.js, Express.js, Socket.io"
+    bullets:
+      - "Architected a highly interactive WebSocket-driven chat server supporting isolated rooms, live message broadcasting, and user location sharing."
+
+  - title: "DawgCoin Web3 App"
+    stack: "Solidity, Foundry, Next.js, Wagmi"
+    bullets:
+      - "Developed an ERC20 token smart contract utilizing Foundry for robust testing."
+      - "Built a full-stack Web3 frontend allowing users to connect wallets and execute transfers."
 
 education:
   - degree: "B.Tech in Computer Science & Data Science"

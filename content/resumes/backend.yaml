@@ -1,44 +1,44 @@
 output: backend_resume.pdf
 
 summary: >-
-  1.5+ years building production backend systems in Go and Rust.
-  Built real-time trading infrastructure at <link href='https://garden.finance'>Garden.Finance</link>,
-  shipped multi-chain integrations, and delivered tooling used in daily operations.
-  Won 3rd place ($1,000) at Polkadot Cloud Hackathon. Looking for backend SDE-1 roles focused
-  on systems and distributed services.
+  Backend Developer with 1.5+ years of production experience building high-performance 
+  services in Go, Rust, and Node.js. Specialized in system benchmarking, multi-chain extraction pipelines, 
+  CLI tooling, and real-time WebSocket communication. Adept at system design, concurrency control, 
+  and maintaining reliable deployment infrastructure.
 
 skills:
   - label: "Languages"
-    value: "Go, Rust, TypeScript, JavaScript, Python"
-  - label: "Backend"
-    value: "Axum, Node.js, Express.js, RESTful APIs, WebSockets, Socket.io"
+    value: "Go, Rust, TypeScript, Python, Bash"
+  - label: "Backend Frameworks"
+    value: "Express.js, Axum, Socket.io"
   - label: "Databases"
-    value: "PostgreSQL, MongoDB, MySQL"
+    value: "PostgreSQL, MongoDB, RocksDB, LevelDB, SurrealDB"
   - label: "Infrastructure"
-    value: "Docker, Docker Compose, AWS, Git, Gitea, Swagger, CI/CD"
-  - label: "Frontend / Mobile"
+    value: "Docker, Vercel, AWS, Git, Gitea, CI/CD"
+  - label: "Frontend (Familiarity)"
     value: "React.js, React Native, Tailwind CSS"
   - label: "Tools"
-    value: "Neovim, Figma, Android Studio, macOS / Linux (Arch)"
+    value: "Neovim, macOS / Linux (Arch), Postman, Foundry"
 
 experience:
-  - title: "Software Associate — Go & Rust"
+  - title: "Software Associate — Backend (Go, Rust)"
     company: "Hashira Works"
     company_url: "https://hashira.io"
     company_url_label: "hashira.io"
     dates: "Dec 2024 – Apr 2026"
     bullets:
-      - "Built and maintained backend services for <b><link href='https://garden.finance'>Garden Finance</link></b> using Go and Rust across watcher services and on-chain extraction pipelines."
-      - "Built <b>Garden Analyzer</b>, an MCP-integrated analytics app over <link href='https://garden.finance'>Garden.Finance</link> multi-chain data, producing protocol metrics and trend reports."
-      - "Implemented <b>Spark</b> and <b>Lightning</b> integrations in Rust to expand cross-chain order execution coverage."
-      - "Built and maintained monitoring automation: Twitter high-value trade image generator bot ($10K+), Strava-to-Discord bot, and a TypeScript arbitrage bot; still running in production after 3 design iterations."
-      - "Owned deployment scripts and internal tooling for self-hosted infrastructure on Gitea."
+      - "Built and maintained highly available backend services for <b><link href='https://garden.finance'>Garden Finance</link></b> in Go and Rust."
+      - "Developed multi-chain watcher services and data extraction pipelines for cross-chain order execution."
+      - "Built <b>Garden Analyzer</b>, a full-stack MCP analytics application in Go over multi-chain transaction data."
+      - "Shipped an arbitrage bot executing high-value trade alerts ($10K+) in production across 3 iterations."
+      - "Owned internal deployment tooling and CI/CD pipelines on a self-hosted Gitea instance."
 
   - title: "Backend Developer Intern"
     company: "Navodita Infotech"
     dates: "Feb 2024 – Mar 2024"
     bullets:
-      - "Built a multi-room real-time chat app with Node.js, Express, and Socket.io. Received a Letter of Recommendation."
+      - "Built a multi-room real-time chat app using Node.js, Express, and Socket.io with location-sharing capabilities and bad-words filtering."
+      - "Received a Letter of Recommendation for backend architecture and delivery."
 
   - title: "Web Developer Intern"
     company: "InternIQ"
@@ -50,39 +50,49 @@ experience:
     company: "NRI Institute of Technology"
     dates: "May 2022 – Aug 2022"
     bullets:
-      - "Taught Python fundamentals to first-year students such as file I/O, text analysis, logic-building exercises."
+      - "Taught Python fundamentals to first-year students such as file I/O, text analysis, and logic-building exercises."
       - "Designed and delivered beginner-friendly coding sessions including text analyzer, Rock-Paper-Scissors, and file handling projects."
 
 projects:
-  - title: "TravelID 2.0"
+  - title: "TravelID 2.0 Backend"
     badge: "3rd Prize · $1,000 · Polkadot Cloud Hackathon"
-    stack: "Rust, Axum, Subxt, React, TypeScript, PostgreSQL, Polkadot"
+    stack: "Rust, Axum, Subxt, PostgreSQL"
     bullets:
-      - "Built a decentralized travel document verification platform on Polkadot using SHA-256 hashes and on-chain Subxt remarks."
-      - "Led backend implementation (Rust, Axum, Subxt) and co-built frontend wallet and QR verification flow."
+      - "Led the backend development for a decentralized verification platform using Axum and Subxt for on-chain Polkadot interactions."
 
-  - title: "Crypto Analyzer"
-    stack: "Go, TypeScript, Claude MCP, Garden.Finance API, multi-chain data"
+  - title: "Database Performance Benchmarker"
+    stack: "Rust, sqlx, RocksDB, LevelDB, SurrealDB, MongoDB, PostgreSQL"
     bullets:
-      - "Built an MCP-powered analytics app for Garden.Finance that evaluates protocol activity across chains and time windows."
-      - "Generated actionable metrics including 82% volume drop (Q2 vs Q1), 304% new-user increase, and 98% Starknet outbound dominance."
+      - "Architected a Rust-based benchmarking application to strictly compare storage and query performance of blockchain data across 5 database engines."
+      - "Designed the ingestion pipeline targeting Midgard API and implemented structured performance metrics logging."
 
-  - title: "Animax — Anime Streaming App"
-    stack: "React Native, TypeScript, Tailwind CSS, AniWatch API"
+  - title: "TraceLabs — Rust AST Extractor"
+    stack: "Rust, Syn, Serde, CLI"
     bullets:
-      - "Built a full React Native anime streaming app with browse, search, and episode playback flows."
-      - "Optimized API fetch and screen transitions for faster load behavior on lower-bandwidth mobile networks."
+      - "Developed a deterministic simulation tool incorporating a custom Rust AST extractor to parse and analyze codebase data flows."
+      - "Built the backend data pipeline that supplies parsed syntax structures to an AI-driven Next.js frontend."
 
-  - title: "Real-Time Chat App"
-    stack: "Node.js, Express, Socket.io, JavaScript"
+  - title: "Passkey Authentication Server"
+    stack: "Rust, WebAuthn, sqlx, HTML/Templates"
     bullets:
-      - "Built a multi-room chat app with live message broadcasting during internship; this became groundwork for Socket.io features later used at Hashira."
+      - "Built a highly secure authentication backend integrating WebAuthn for passwordless passkey authentication."
+      - "Managed state and database migrations cleanly using sqlx."
 
-  - title: "Automation Tools/Bots (Discord, Telegram, Twitter)"
-    stack: "Python, TypeScript, discord.py, python-telegram-bot, GitHub API"
+  - title: "Merry — Multichain Localnet Launcher"
+    stack: "Bash, Docker, Bitcoin Regtest, Ethereum Localnet"
     bullets:
-      - "Built a Discord music bot with queue and playback controls used in day-to-day community sessions."
-      - "Built Telegram and Twitter automation for GitHub release delivery and high-value trade monitoring."
+      - "Built a CLI tool to swiftly launch local multi-chain environments for testing cross-chain operations."
+      - "Automates the setup of Bitcoin regtest nodes, Ethereum localnets, and Catalog services."
+
+  - title: "Real-Time Node.js Chat Server"
+    stack: "Node.js, Express.js, Socket.io"
+    bullets:
+      - "Architected a highly interactive WebSocket-driven chat server supporting isolated rooms, live message broadcasting, and user location sharing."
+
+  - title: "Todo CLI — Go Task Manager"
+    stack: "Go, syscall.Flock, CSV Data Store"
+    bullets:
+      - "Engineered a robust, zero-dependency terminal task manager utilizing the Go standard library and `syscall.Flock` for concurrency-safe file locking."
 
 education:
   - degree: "B.Tech in Computer Science & Data Science"

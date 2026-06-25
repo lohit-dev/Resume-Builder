@@ -16,12 +16,11 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.lib import colors
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, HRFlowable,
-    Table, TableStyle, KeepTogether, PageBreak,
+    SimpleDocTemplate, Paragraph, Spacer, HRFlowable, KeepTogether, PageBreak
 )
-from reportlab.lib.enums import TA_LEFT, TA_CENTER
+from reportlab.lib.enums import TA_LEFT
 
-# ── Palette ───────────────────────────────────────────────────────────────────
+# ── Palette (matches gold-standard) ──────────────────────────────────────────
 BLACK  = colors.HexColor("#0d0d0d")
 DARK   = colors.HexColor("#1a1a1a")
 MUTED  = colors.HexColor("#555555")
@@ -61,12 +60,13 @@ def build(profile: dict, data: dict, output_path: str):
         bottomMargin=0.45 * inch,
     )
 
-    # Styles
+    # Styles — exact match to gold-standard resume
     name_st    = _style("r_name",    fontName="Helvetica-Bold", fontSize=20, leading=24, alignment=TA_LEFT)
     contact_st = _style("r_contact", fontSize=8.2, textColor=MUTED, alignment=TA_LEFT, leading=12)
     sub_st     = _style("r_sub",     fontSize=9.5, textColor=MUTED, alignment=TA_LEFT, leading=13)
     section_st = _style("r_section", fontName="Helvetica-Bold", fontSize=9.5,
                         textColor=ACCENT, spaceBefore=7, spaceAfter=2, leading=12)
+
     jobtitle_st = _style("r_jobtitle", fontName="Helvetica-Bold", fontSize=10, textColor=BLACK, leading=13)
     company_st  = _style("r_company",  fontSize=9, textColor=MUTED, leading=12)
     meta_st     = _style("r_meta",     fontSize=9, textColor=MUTED, leading=12, alignment=TA_LEFT)
@@ -99,14 +99,14 @@ def build(profile: dict, data: dict, output_path: str):
     story.append(Paragraph(_e(profile["tagline"]), sub_st))
     story.append(_sp(4))
     story.append(Paragraph(
-        f"{_e(profile['email'])} · {_e(profile['phone'])} · {_e(profile['location'])}",
+        f"{_e(profile['email'])} &nbsp;·&nbsp; {_e(profile['phone'])} &nbsp;·&nbsp; {_e(profile['location'])}",
         contact_st,
     ))
     story.append(_sp(2))
     story.append(Paragraph(
-        f"<link href='{links['github_url']}'>{_e(links['github_label'])}</link> · "
-        f"<link href='{links['linkedin_url']}'>{_e(links['linkedin_label'])}</link> · "
-        f"<link href='{links['website_url']}'>{_e(links['website_label'])}</link> · "
+        f"<link href='{links['github_url']}'>{_e(links['github_label'])}</link> &nbsp;·&nbsp; "
+        f"<link href='{links['linkedin_url']}'>{_e(links['linkedin_label'])}</link> &nbsp;·&nbsp; "
+        f"<link href='{links['website_url']}'>{_e(links['website_label'])}</link> &nbsp;·&nbsp; "
         f"<link href='{links['resume_url']}'>{_e(links['resume_label'])}</link>",
         contact_st,
     ))
@@ -138,8 +138,8 @@ def build(profile: dict, data: dict, output_path: str):
         company_name = _e(job["company"])
         if job.get("company_url") and job.get("company_url_label"):
             company_line = (
-                f"{company_name} · "
-                f"<link href='{job['company_url']}'>{_e(job['company_url_label'])}</link>"
+                f"{company_name} &nbsp;·&nbsp; "
+                f"<font color='#555555'><link href='{job['company_url']}'>{_e(job['company_url_label'])}</link></font>"
             )
         else:
             company_line = company_name
@@ -163,7 +163,7 @@ def build(profile: dict, data: dict, output_path: str):
         if proj.get("badge"):
             block.append(Paragraph(
                 f"<b>{_e(proj['title'])}</b>  "
-                f"<font color='#1f5fa8'><b><i>{_e(proj['badge'])}</i></b></font>",
+                f"&nbsp;&nbsp;<font color='#1f5fa8'><b><i>{_e(proj['badge'])}</i></b></font>",
                 jobtitle_st,
             ))
         else:
@@ -195,14 +195,15 @@ def build(profile: dict, data: dict, output_path: str):
         story.append(_sp(5))
 
     # ── Languages ─────────────────────────────────────────────────────────────
-    story += section("Languages")
-    story.append(_sp(2))
-    lang_parts = []
-    for lang in data["languages"]:
-        lang_parts.append(f"<b>{_e(lang['name'])}</b> — {_e(lang['level'])}")
-    story.append(Paragraph(
-        " &nbsp;&nbsp;·&nbsp;&nbsp; ".join(lang_parts),
-        skills_st,
-    ))
+    if data.get("languages"):
+        story += section("Languages")
+        story.append(_sp(2))
+        lang_parts = []
+        for lang in data["languages"]:
+            lang_parts.append(f"<b>{_e(lang['name'])}</b> — {_e(lang['level'])}")
+        story.append(Paragraph(
+            " &nbsp;&nbsp;·&nbsp;&nbsp; ".join(lang_parts),
+            skills_st,
+        ))
 
     doc.build(story)

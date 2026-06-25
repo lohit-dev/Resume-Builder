@@ -1,45 +1,44 @@
 output: blockchain_resume.pdf
 
 summary: >-
-  Backend engineer with 1.5+ years building production systems in Rust and Go,
-  specializing in blockchain infrastructure and cross-chain protocol integration.
-  Won 3rd place ($1,000) at the Polkadot Cloud Hackathon with TravelID 2.0.
-  Shipped Spark and Lightning cross-chain integrations at Garden Finance, built
-  on-chain extraction pipelines, and implemented cryptographic protocols including
-  SHA-256 verification and TOTP (RFC 6238) from scratch.
+  Web3 Developer and Backend Engineer with hands-on experience in cross-chain protocols, 
+  Rust, Go, and smart contract deployment. Built multi-chain execution pipelines at Garden Finance 
+  and decentralized applications on Polkadot. Proficient in Foundry, HTLCs, ERC20 tokens, and launching local 
+  multi-chain testing environments. Passionate about DeFi infrastructure and cross-chain interoperability.
 
 skills:
   - label: "Languages"
-    value: "Rust, Go, TypeScript, JavaScript, Python"
-  - label: "Blockchain"
-    value: "Polkadot, Subxt, cross-chain order execution, on-chain data extraction, SHA-256 verification"
+    value: "Rust, Go, Solidity, TypeScript, Python"
+  - label: "Web3 & Blockchain"
+    value: "Foundry, HTLCs, ERC20, Subxt, Polkadot SDK, Ethers.js, Viem"
   - label: "Backend"
-    value: "Axum, Node.js, RESTful APIs, WebSockets, watcher services, event pipelines"
-  - label: "Databases"
-    value: "PostgreSQL, MongoDB, MySQL"
+    value: "Node.js, Express, Axum, RESTful APIs, WebSockets"
   - label: "Infrastructure"
-    value: "Docker, Docker Compose, AWS, Git, Gitea, CI/CD"
+    value: "Docker, Vercel, AWS, Git, Gitea, CI/CD"
+  - label: "Frontend (Familiarity)"
+    value: "React.js, Tailwind CSS"
   - label: "Tools"
-    value: "Neovim, Figma, macOS / Linux (Arch)"
+    value: "Neovim, Android Studio, macOS / Linux (Arch)"
 
 experience:
-  - title: "Software Associate — Rust & Go (Blockchain Infrastructure)"
+  - title: "Software Associate — Web3 & Backend (Go, Rust)"
     company: "Hashira Works"
     company_url: "https://hashira.io"
     company_url_label: "hashira.io"
     dates: "Dec 2024 – Apr 2026"
     bullets:
-      - "Implemented <b>Spark</b> and <b>Lightning</b> integrations in Rust to expand cross-chain order execution coverage for <link href='https://garden.finance'>Garden Finance</link>."
-      - "Built on-chain extraction pipelines and watcher services in Go and Rust monitoring multi-chain transaction flow in real time."
-      - "Built <b>Garden Analyzer</b>, an MCP-integrated analytics app over Garden.Finance multi-chain data, generating protocol metrics across chains and time windows."
-      - "Built a Twitter bot generating trade alert images for high-value on-chain events ($10K+); still running in production after 3 design iterations."
-      - "Owned deployment scripts and internal tooling for self-hosted infrastructure on Gitea."
+      - "Built and maintained cross-chain backend services for <b><link href='https://garden.finance'>Garden Finance</link></b> using Go and Rust."
+      - "Developed watcher services and extraction pipelines for multi-chain order execution and state tracking."
+      - "Built <b>Garden Analyzer</b>, a full-stack MCP analytics app over Garden's multi-chain transaction data."
+      - "Created and deployed a highly profitable ($10K+) arbitrage bot monitoring on-chain liquidity."
+      - "Owned internal deployment tooling on self-hosted Gitea."
 
   - title: "Backend Developer Intern"
     company: "Navodita Infotech"
     dates: "Feb 2024 – Mar 2024"
     bullets:
-      - "Built a multi-room real-time chat app with Node.js, Express, and Socket.io. Received a Letter of Recommendation."
+      - "Built a real-time messaging system with Node.js and Socket.io, foundational experience for building event-driven Web3 architectures."
+      - "Received a Letter of Recommendation for backend architecture and delivery."
 
   - title: "Web Developer Intern"
     company: "InternIQ"
@@ -51,46 +50,53 @@ experience:
     company: "NRI Institute of Technology"
     dates: "May 2022 – Aug 2022"
     bullets:
-      - "Taught Python fundamentals to first-year students: file I/O, text analysis, logic-building exercises."
+      - "Taught Python fundamentals to first-year students such as file I/O, text analysis, and logic-building exercises."
+      - "Designed and delivered beginner-friendly coding sessions including text analyzer, Rock-Paper-Scissors, and file handling projects."
 
 projects:
   - title: "TravelID 2.0"
     badge: "3rd Prize · $1,000 · Polkadot Cloud Hackathon"
-    stack: "Rust, Axum, Subxt, React, TypeScript, PostgreSQL, Polkadot"
+    stack: "Rust, Axum, Subxt, React, TypeScript, Polkadot"
     bullets:
-      - "Built a decentralized travel document verification platform on Polkadot using SHA-256 hashes and on-chain Subxt remarks."
-      - "Led backend implementation (Rust, Axum, Subxt) and co-built frontend wallet and QR verification flow."
+      - "Built a decentralized travel document verification platform using SHA-256 hashes and on-chain remarks via Subxt."
+      - "Led the backend architecture and co-built the React frontend wallet integration."
 
-  - title: "Crypto Analyzer"
-    stack: "Go, TypeScript, Claude MCP, Garden.Finance API, multi-chain data"
+  - title: "DawgCoin — Custom ERC20 Token & DApp"
+    stack: "Solidity, Foundry, React, Ethers.js"
     bullets:
-      - "Built an MCP-powered analytics app for Garden.Finance evaluating protocol activity across chains and time windows."
-      - "Generated actionable metrics: 82% volume drop (Q2 vs Q1), 304% new-user increase, 98% Starknet outbound dominance."
+      - "Developed and deployed a custom ERC20 token smart contract utilizing Foundry for robust testing and determinism."
+      - "Built a full-stack Web3 frontend allowing users to connect their wallets and interact directly with the token contract."
 
-  - title: "Automation Tools/Bots (Discord, Telegram, Twitter)"
-    stack: "Python, TypeScript, discord.py, python-telegram-bot, GitHub API"
+  - title: "Merry — Multichain Localnet Launcher"
+    stack: "Bash, Docker, Bitcoin Regtest, Ethereum Localnet"
     bullets:
-      - "Built Twitter automation for high-value on-chain trade monitoring and GitHub release delivery via Telegram."
-      - "Built a Discord music bot with queue and playback controls used in day-to-day community sessions."
+      - "Built a CLI tool to swiftly launch local multi-chain environments for testing cross-chain operations."
+      - "Automates the setup of Bitcoin regtest nodes, Ethereum localnets, block explorers, and Catalog services."
 
-  - title: "Real-Time Chat App"
-    stack: "Node.js, Express, Socket.io, JavaScript"
+  - title: "Cross-Chain HTLC Smart Contracts"
+    stack: "Solidity, Foundry, Arbitrum, Sepolia"
     bullets:
-      - "Built a multi-room chat app with live message broadcasting; groundwork for Socket.io features later used at Hashira."
+      - "Developed and deployed Hashed Time-Locked Contracts (HTLC) to enable trustless atomic swaps."
+      - "Utilized Foundry (forge script) to ensure deterministic deployments (Create2) across Arbitrum Sepolia and Ethereum Sepolia."
 
-  - title: "Animax — Anime Streaming App"
-    stack: "React Native, TypeScript, Tailwind CSS, AniWatch API"
+  - title: "Blockchain Database Benchmarker"
+    stack: "Rust, sqlx, RocksDB, LevelDB, SurrealDB, PostgreSQL"
     bullets:
-      - "Built a full React Native anime streaming app with browse, search, and episode playback flows."
+      - "Architected a Rust-based benchmarking application to compare storage/query performance of on-chain data ingestion across 5 database engines."
+
+  - title: "Garden Analyzer"
+    stack: "Go, TypeScript, Claude MCP, Garden.Finance API"
+    bullets:
+      - "Built an MCP-powered analytics app for Garden.Finance that evaluates protocol activity across chains and time windows."
+      - "Generated actionable metrics tracking volume drops, new-user increases, and outbound network dominance."
 
 education:
   - degree: "B.Tech in Computer Science & Data Science"
     institution: "NRI Institute of Technology, Agiripalli"
     dates: "2022 – 2026 (Final Semester)"
     bullets:
-      - "Member of Google Developers Club; attended hackathons and workshops."
+      - "Member of Google Developers Club; active participant in Web3 hackathons."
       - "1st place in college-wide SQL mobile app competition."
-      - "Published two Android apps on the Play Store independently, end-to-end."
 
   - degree: "Intermediate — MPC (Maths, Physics, Chemistry)"
     institution: "Sri Chaitanya Junior College"
