@@ -1,0 +1,109 @@
+output: fullstack_resume.pdf
+
+summary: >-
+  Full-stack developer with 1.5+ years of production experience across backend
+  systems, mobile, and web. Built real-time backend services in Go and Rust at
+  Garden Finance, shipped a complete React Native streaming app, and delivered
+  multi-room WebSocket chat infrastructure. Comfortable owning a feature end-to-end
+  from database schema to UI, and working across TypeScript, Go, Rust, and Python.
+
+skills:
+  - label: "Languages"
+    value: "TypeScript, JavaScript, Go, Rust, Python"
+  - label: "Frontend / Mobile"
+    value: "React.js, React Native, Tailwind CSS, Figma"
+  - label: "Backend"
+    value: "Node.js, Express.js, Axum, RESTful APIs, WebSockets, Socket.io"
+  - label: "Databases"
+    value: "PostgreSQL, MongoDB, MySQL"
+  - label: "Infrastructure"
+    value: "Docker, Docker Compose, AWS, Git, Gitea, CI/CD"
+  - label: "Tools"
+    value: "Neovim, Android Studio, macOS / Linux (Arch)"
+
+experience:
+  - title: "Software Associate — Full-Stack (Go, Rust, TypeScript)"
+    company: "Hashira Works"
+    company_url: "https://hashira.io"
+    company_url_label: "hashira.io"
+    dates: "Dec 2024 – Apr 2026"
+    bullets:
+      - "Built and maintained backend services for <b><link href='https://garden.finance'>Garden Finance</link></b> in Go and Rust: watcher services, extraction pipelines, and cross-chain order execution."
+      - "Built <b>Garden Analyzer</b>, a full-stack MCP analytics app in Go and TypeScript over Garden.Finance multi-chain data."
+      - "Shipped a TypeScript arbitrage bot and a Twitter image-generator bot for high-value trade alerts ($10K+); still running in production after 3 iterations."
+      - "Built a Strava-to-Discord integration bot and owned internal deployment tooling on self-hosted Gitea."
+
+  - title: "Backend Developer Intern"
+    company: "Navodita Infotech"
+    dates: "Feb 2024 – Mar 2024"
+    bullets:
+      - "Built a multi-room real-time chat app with Node.js, Express, and Socket.io. Received a Letter of Recommendation."
+
+  - title: "Web Developer Intern"
+    company: "InternIQ"
+    dates: "Mar 2024 – Apr 2024"
+    bullets:
+      - "Built and optimized web application features during a 1-month internship; received a Letter of Recommendation for performance."
+
+  - title: "Python Instructor (Part-time)"
+    company: "NRI Institute of Technology"
+    dates: "May 2022 – Aug 2022"
+    bullets:
+      - "Taught Python fundamentals to first-year students and designed beginner coding projects."
+
+projects:
+  - title: "Animax — Anime Streaming App"
+    stack: "React Native, TypeScript, Tailwind CSS, AniWatch API"
+    bullets:
+      - "Built a complete React Native streaming app with browse, search, and episode playback from scratch."
+      - "Optimized API fetch and screen transitions for faster performance on lower-bandwidth mobile networks."
+
+  - title: "Real-Time Chat App"
+    stack: "Node.js, Express, Socket.io, JavaScript"
+    bullets:
+      - "Built a multi-room chat app with live message broadcasting and room management."
+      - "Became the foundation for Socket.io patterns later used in production at Hashira."
+
+  - title: "TravelID 2.0"
+    badge: "3rd Prize · $1,000 · Polkadot Cloud Hackathon"
+    stack: "Rust, Axum, Subxt, React, TypeScript, PostgreSQL, Polkadot"
+    bullets:
+      - "Led backend and co-built the React frontend: wallet integration and QR-based verification flow."
+      - "Decentralized document verification using SHA-256 hashes and on-chain Subxt remarks."
+
+  - title: "Crypto Analyzer"
+    stack: "Go, TypeScript, Claude MCP, Garden.Finance API, multi-chain data"
+    bullets:
+      - "Built a full-stack MCP analytics app in Go and TypeScript for Garden.Finance protocol metrics."
+
+  - title: "Automation Tools/Bots (Discord, Telegram, Twitter)"
+    stack: "Python, TypeScript, discord.py, python-telegram-bot, GitHub API"
+    bullets:
+      - "Built a Discord music bot with queue and playback, and Telegram/Twitter automation for trade monitoring and release delivery."
+
+education:
+  - degree: "B.Tech in Computer Science & Data Science"
+    institution: "NRI Institute of Technology, Agiripalli"
+    dates: "2022 – 2026 (Final Semester)"
+    bullets:
+      - "Member of Google Developers Club; attended hackathons and workshops."
+      - "1st place in college-wide SQL mobile app competition."
+      - "Published two Android apps on the Play Store independently, end-to-end."
+
+  - degree: "Intermediate — MPC (Maths, Physics, Chemistry)"
+    institution: "Sri Chaitanya Junior College"
+    dates: "2020 – 2022"
+
+  - degree: "SSC"
+    institution: "Ravindra Bharathi Public School"
+    dates: "2019 – 2020"
+
+languages:
+  - name: "English"
+    level: "Proficient"
+  - name: "Telugu"
+    level: "Native"
+  - name: "Hindi"
+    level: "Conversational"
+  - name: "Japanese"
+    level: "Still Learning"
